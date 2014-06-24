@@ -1,0 +1,26 @@
+{
+  "name": "mymysql",
+  "version": "0.1.0",
+  "description": "My opinionated wrapper around MySQL client API.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/titarenko/mymysql.git"
+  },
+  "keywords": [
+    "mysql",
+    "promise",
+    "sql"
+  ],
+  "author": "Constantin Titarenko",
+  "license": "BSD",
+  "bugs": {
+    "url": "https://github.com/titarenko/mymysql/issues"
+  },
+  "homepage": "https://github.com/titarenko/mymysql",
+  "dependencies": {
+    "lodash": "^2.4.1",
+    "mysql": "^2.1.1",
+    "q": "^1.0.1"
+  }
+}
