@@ -1,11 +1,11 @@
 {
-  "name": "mymysql",
-  "version": "0.1.1",
-  "description": "My opinionated wrapper around MySQL client API.",
+  "name": "sqlcut-mysql",
+  "version": "0.1.0",
+  "description": "MySQL API adapter for sqlcut module",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/titarenko/mymysql.git"
+    "url": "git://github.com/titarenko/sqlcut-mysql.git"
   },
   "keywords": [
     "mysql",
@@ -15,11 +15,10 @@
   "author": "Constantin Titarenko",
   "license": "BSD",
   "bugs": {
-    "url": "https://github.com/titarenko/mymysql/issues"
+    "url": "https://github.com/titarenko/sqlcut-mysql/issues"
   },
-  "homepage": "https://github.com/titarenko/mymysql",
+  "homepage": "https://github.com/titarenko/sqlcut-mysql",
   "dependencies": {
-    "lodash": "^2.4.1",
     "mysql": "^2.1.1",
     "q": "^1.0.1"
   }
