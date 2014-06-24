@@ -2,6 +2,13 @@ var mysql = require('mysql');
 var Q = require('q');
 var _ = require('lodash');
 
+function SqlError (args, error) {
+	this.name = 'SqlError';
+	this.args = args;
+	this.details = error;
+	this.message = 'Can\'t complete SQL query due to error.';
+}
+
 var pool;
 
 function getPool () {
@@ -12,11 +19,7 @@ function query (query, params) {
 	var deferred = Q.defer();
 	getPool().query(query, params, function (error, results) {
 		if (error) {
-			return deferred.reject({
-				query: query,
-				params: params,
-				error: error
-			});
+			return deferred.reject(new SqlError([query, params], error));
 		}
 		deferred.resolve(results);
 	});
